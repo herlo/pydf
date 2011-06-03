@@ -1,1 +1,5 @@
-/pydf_9.tar.gz
+*.pyc
+.*sw*
+.*~
+*~
+.DS_Store
