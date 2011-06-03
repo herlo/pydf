@@ -3,7 +3,7 @@ ifndef WORKDIR
 endif
 
 sources:
-	wget http://herlo.org/misc/pydf_9.tar.gz -O $(WORKDIR)/pydf_9.tar.gz
+	wget http://herlo.org/misc/pydf_9.tar.gz
 
 clean:
 	rm pydf_9.tar.gz
