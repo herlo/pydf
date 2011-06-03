@@ -1,7 +1,7 @@
 Summary:        Fully colorized df clone written in python
 Name:           pydf
 Version:        9
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:        Public Domain
 Group:          Applications/System
 Source:         http://kassiopeia.juls.savba.sk/~garabik/software/%{name}/%{name}_9.tar.gz
