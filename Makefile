@@ -4,10 +4,8 @@ CLIENT	?= $(if $(CURL),$(CURL),$(if $(WGET),$(WGET)))
 
 sources:
 	$(CLIENT) http://herlo.org/misc/pydf_9.tar.gz
-	$(CLIENT) http://herlo.org/misc/MD5SUM
-
-test: sources
-	md5sum -c MD5SUM || echo 'MD5 check failed'
+	$(CLIENT) http://herlo.org/misc/archive
+	md5sum -c archive || ( echo 'MD5 check failed' ; exit 1 )
 
 clean:
 	rm pydf_9.tar.gz
